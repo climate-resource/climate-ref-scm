@@ -7,17 +7,23 @@ It replaces the CMIP6 processing previously done with
 
 ## What it produces
 
-The `stitched-timeseries` diagnostic runs once per model, experiment, member and grid.
-For each run it:
+Two diagnostics run once per model, experiment, member and grid:
 
-- takes annual means of monthly `tas` over the world and the four MAGICC boxes
+- `stitched-timeseries` processes `tas`.
+- `stitched-toa-fluxes` processes `rsdt`, `rsut` and `rlut`,
+  and derives the net downward flux at the top of the atmosphere, `rtnt = rsdt - rsut - rlut`.
+
+For each variable they:
+
+- take annual means of the monthly values over the world and the four MAGICC boxes
   (northern and southern hemisphere, each split into land and ocean, using `areacella` and `sftlf`).
-- stitches the experiment onto its parents, so `ssp245` carries `historical` back to 1850.
-- subtracts a 21-year running mean of the control run at the matching time after the branch,
+- stitch the experiment onto its parents, so `ssp245` carries `historical` back to 1850.
+- subtract a 21-year running mean of the control run at the matching time after the branch,
   which also removes drift in the control run.
 
 Results are written to `timeseries.csv` in the layout of the RCMIP submission files,
-and stored in the REF as series with `statistic` set to `absolute` or `anomaly`.
+and stored in the REF as series with `metric` set to the variable
+and `statistic` set to `absolute` or `anomaly`.
 
 Cells centred on the equator count as northern hemisphere, as in netcdf-scm.
 

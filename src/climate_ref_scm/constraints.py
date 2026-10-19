@@ -18,7 +18,7 @@ _MAX_GENERATIONS = 10
 @frozen
 class AddAncestors:
     """
-    Add every ancestor of the group, up to and including its control run.
+    Add every ancestor of each variable in the group, up to and including its control run.
 
     An `ssp245` group gains its `historical` parent and the `piControl` behind that.
     The group is dropped if any link in the chain is missing or ambiguous.
@@ -33,21 +33,29 @@ class AddAncestors:
 
     def apply(self, group: pd.DataFrame, data_catalog: pd.DataFrame) -> pd.DataFrame:
         """
-        Add the ancestors of `group` from `data_catalog`.
+        Add the ancestors of each variable in `group` from `data_catalog`.
         """
         selected = [group]
-        child = group
+        for _, variable in group.groupby("variable_id"):
+            ancestors = self._ancestors(variable, data_catalog)
+            if ancestors is None:
+                return group.loc[[]]
+            selected.extend(ancestors)
+        return pd.concat(selected)
+
+    def _ancestors(self, child: pd.DataFrame, data_catalog: pd.DataFrame) -> list[pd.DataFrame] | None:
+        ancestors: list[pd.DataFrame] = []
         for _ in range(_MAX_GENERATIONS):
             if child["experiment_id"].isin(CONTROL_EXPERIMENTS).all():
-                return pd.concat(selected)
+                return ancestors
             parent = self._find_parent(child, data_catalog)
             if parent is None:
-                return group.loc[[]]
-            selected.append(parent)
+                return None
+            ancestors.append(parent)
             child = parent
 
         logger.debug(f"Constraint {self} not satisfied because the parent chain did not reach a control run")
-        return group.loc[[]]
+        return None
 
     def _find_parent(self, child: pd.DataFrame, data_catalog: pd.DataFrame) -> pd.DataFrame | None:
         child_facets = child[list(self.parent_facet_map.values())].drop_duplicates()
