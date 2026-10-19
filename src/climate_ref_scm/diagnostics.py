@@ -27,8 +27,14 @@ from climate_ref_core.metric_values import SeriesMetricValue
 from climate_ref_core.pycmec.metric import CMECMetric
 from climate_ref_core.pycmec.output import CMECOutput
 from climate_ref_core.testing import TestCase, TestDataSpecification
+from loguru import logger
 
-from climate_ref_scm.constraints import AddAncestors, branch_year_in_control, experiment_chain
+from climate_ref_scm.constraints import (
+    AddAncestors,
+    branch_year_in_control,
+    experiment_chain,
+    member_fallbacks,
+)
 from climate_ref_scm.esgf import CMIP7ESGFRequest
 from climate_ref_scm.regions import annual_regional_means
 from climate_ref_scm.stitching import RUNNING_MEAN_YEARS, normalise, stitch
@@ -178,7 +184,9 @@ def _single_path(datasets: pd.DataFrame, variable_id: str) -> Path:
     return Path(paths[0])
 
 
-def stitched_series(datasets: pd.DataFrame, experiment_id: str, variable_id: str) -> dict[str, pd.DataFrame]:
+def stitched_series(
+    datasets: pd.DataFrame, experiment_id: str, variable_id: str
+) -> tuple[dict[str, pd.DataFrame], str]:
     """
     Stitched absolute values and control-relative anomalies of one variable for each region.
 
@@ -194,7 +202,8 @@ def stitched_series(datasets: pd.DataFrame, experiment_id: str, variable_id: str
     Returns
     -------
     :
-        Absolute values and anomalies keyed by kind, each indexed by year with one column per region
+        Absolute values and anomalies keyed by kind, each indexed by year with one column per region,
+        and a description of any substituted parent members, empty if there are none
     """
     areacella, sftlf = (_single_path(datasets, fixed_field) for fixed_field in FIXED_FIELDS)
     variable = datasets[datasets["variable_id"] == variable_id]
@@ -213,7 +222,10 @@ def stitched_series(datasets: pd.DataFrame, experiment_id: str, variable_id: str
     stitched = stitch(annual[:-1])
     # The oldest ancestor starts at its branch point, so its first year lines up with the branch year.
     branch_year = branch_year_in_control(chain[-2], chain[-1])
-    return {ABSOLUTE: stitched, ANOMALY: normalise(stitched, annual[-1], branch_year)}
+    caveat = ", ".join(member_fallbacks(chain))
+    if caveat:
+        logger.warning(f"{variable_id} is stitched onto a substitute parent: {caveat}")
+    return {ABSOLUTE: stitched, ANOMALY: normalise(stitched, annual[-1], branch_year)}, caveat
 
 
 def stitched_timeseries(
@@ -234,11 +246,11 @@ def stitched_timeseries(
     Returns
     -------
     :
-        Long table with `variable_id`, `kind`, `region`, `year` and `value` columns
+        Long table with `variable_id`, `kind`, `region`, `year`, `value` and `caveats` columns
     """
-    series = {
-        variable_id: stitched_series(datasets, experiment_id, variable_id) for variable_id in variable_ids
-    }
+    series, caveats = {}, {}
+    for variable_id in variable_ids:
+        series[variable_id], caveats[variable_id] = stitched_series(datasets, experiment_id, variable_id)
     for derived_id, terms in DERIVED.items():
         if set(terms) <= set(variable_ids):
             # Every step is linear, so the anomaly of a sum is the same sum of anomalies.
@@ -246,12 +258,13 @@ def stitched_timeseries(
                 kind: functools.reduce(operator.add, (sign * series[v][kind] for v, sign in terms.items()))
                 for kind in _KINDS
             }
+            caveats[derived_id] = ", ".join(dict.fromkeys(caveats[v] for v in terms if caveats[v]))
 
     return pd.concat(
         [
             frame.reset_index()
             .melt(id_vars="year", var_name="region", value_name="value")
-            .assign(variable_id=variable_id, kind=kind)
+            .assign(variable_id=variable_id, kind=kind, caveats=caveats[variable_id])
             for variable_id, frames in series.items()
             for kind, frame in frames.items()
         ],
@@ -261,10 +274,10 @@ def stitched_timeseries(
 
 def to_rcmip_format(timeseries: pd.DataFrame, selectors: dict[str, str]) -> pd.DataFrame:
     """
-    Wide table in the layout of the RCMIP submission files.
+    Wide table in the layout of the RCMIP submission files, with any caveats on each variable.
     """
     wide = timeseries.pivot_table(
-        index=["variable_id", "kind", "region"], columns="year", values="value", sort=False
+        index=["variable_id", "kind", "region", "caveats"], columns="year", values="value", sort=False
     ).reset_index()
     meta = pd.DataFrame(
         {
@@ -276,9 +289,10 @@ def to_rcmip_format(timeseries: pd.DataFrame, selectors: dict[str, str]) -> pd.D
             "variable": [_RCMIP_NAMES[key] for key in zip(wide["variable_id"], wide["kind"])],
             "unit": [VARIABLES[variable_id][1] for variable_id in wide["variable_id"]],
             "normalisation": wide["kind"].map({kind: method for kind, (_, method) in _KINDS.items()}),
+            "caveats": wide["caveats"],
         }
     )
-    return pd.concat([meta, wide.drop(columns=["variable_id", "kind", "region"])], axis="columns")
+    return pd.concat([meta, wide.drop(columns=["variable_id", "kind", "region", "caveats"])], axis="columns")
 
 
 def from_rcmip_format(wide: pd.DataFrame) -> pd.DataFrame:
@@ -330,7 +344,8 @@ def _output_bundle() -> dict[str, Any]:
         "description": (
             "Annual means over the world and the four MAGICC boxes, stitched onto the parent experiments, "
             f"as absolute values and as anomalies from a {RUNNING_MEAN_YEARS}-year running mean "
-            "of the control run."
+            "of the control run. "
+            "The caveats column names any parent member substituted because the named one is not available."
         ),
     }
     return bundle

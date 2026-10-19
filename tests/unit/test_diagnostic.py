@@ -7,6 +7,7 @@ from climate_ref_core.exceptions import InvalidDiagnosticException
 from climate_ref_core.metric_values import SeriesMetricValue
 
 from climate_ref_scm import provider
+from climate_ref_scm.constraints import nearest_member
 from climate_ref_scm.diagnostics import (
     OUTPUT_FILENAME,
     STITCHED_TAS,
@@ -49,6 +50,15 @@ def _run(
     assert [int(c) for c in out.columns if c.isdigit()] == YEARS.tolist()
     series = SeriesMetricValue.load_from_json(definition.to_output_path(result.series_filename))
     return out, series
+
+
+def _with_ssp_member(catalog: pd.DataFrame, member: str) -> pd.DataFrame:
+    """Relabel ssp245 as `member`, which names a parent member that does not exist."""
+    is_ssp = catalog["experiment_id"] == "ssp245"
+    catalog = catalog.copy()
+    catalog.loc[is_ssp, "instance_id"] = catalog.loc[is_ssp, "instance_id"].str.replace("r1i1p1f1", member)
+    catalog.loc[is_ssp, ["variant_label", "member_id", "parent_variant_label"]] = member
+    return catalog
 
 
 def _values(out: pd.DataFrame, variable: str) -> pd.DataFrame:
@@ -122,3 +132,34 @@ def test_execute_derives_net_flux(synthetic_catalog, source_type, definition_fac
     assert set(out.loc[out["variable"].str.startswith("TOA"), "unit"]) == {"W m^-2"}
     assert {s.dimensions["metric"] for s in series} == {"rsdt", "rsut", "rlut", "rtnt"}
     assert len(series) == 4 * 2 * len(REGION_OFFSET)
+
+
+def test_nearest_member():
+    members = ["r1i1p1f1", "r5i1p1f1", "r7i1p1f1", "r6i1p2f1"]
+
+    assert nearest_member("r6i1p1f1", members) == "r5i1p1f1"
+    assert nearest_member("r7i1p1f1", members) == "r7i1p1f1"
+    assert nearest_member("r6i1p2f1", members) == "r6i1p2f1"
+
+
+def test_solve_uses_nearest_parent_member(synthetic_catalog, source_type):
+    catalog = _with_ssp_member(synthetic_catalog, "r6i1p1f1")
+
+    ssp = _datasets(catalog, source_type, STITCHED_TAS)
+
+    members = ssp.drop_duplicates("experiment_id").set_index("experiment_id")["variant_label"]
+    assert members.to_dict() == {"ssp245": "r6i1p1f1", "historical": "r1i1p1f1", "piControl": "r1i1p1f1"}
+
+
+def test_run_records_substituted_parent(synthetic_catalog, source_type, definition_factory):
+    catalog = _with_ssp_member(synthetic_catalog, "r6i1p1f1")
+
+    out, _ = _run(catalog, source_type, STITCHED_TOA_FLUXES, definition_factory)
+
+    assert set(out["caveats"]) == {"historical r6i1p1f1 is not available, so r1i1p1f1 is used"}
+
+
+def test_run_without_substitute_has_no_caveats(synthetic_catalog, source_type, definition_factory):
+    out, _ = _run(synthetic_catalog, source_type, STITCHED_TAS, definition_factory)
+
+    assert out["caveats"].isna().all()
