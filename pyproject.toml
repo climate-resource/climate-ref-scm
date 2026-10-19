@@ -1,0 +1,106 @@
+[project]
+name = "climate-ref-scm"
+version = "0.1.0"
+description = "Stitched, normalised timeseries from CMIP for calibrating simple climate models"
+readme = "README.md"
+authors = [
+    { name = "Jared Lewis", email = "jared.lewis@climate-resource.com" },
+]
+license = "Apache-2.0"
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "cftime>=1.6",
+    "climate-ref-core>=0.19.0,<1.0.0",
+    "netcdf4>=1.7",
+    "numpy>=2",
+    "pandas>=2.2",
+    "xarray>=2025.1",
+]
+
+[project.urls]
+Repository = "https://github.com/climate-resource/climate-ref-scm"
+Issues = "https://github.com/climate-resource/climate-ref-scm/issues"
+
+[project.entry-points."climate-ref.providers"]
+scm = "climate_ref_scm:provider"
+
+[project.optional-dependencies]
+test = [
+    "climate-ref[test]",
+    "pytest>=9.0.0",
+    "pytest-mock>=3.12",
+]
+
+[dependency-groups]
+dev = [
+    "climate-ref-scm[test]",
+    "ruff>=0.14.0",
+    "mypy>=1.19.0",
+    "pre-commit>=3.3.1",
+    "pandas-stubs>=2.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+src = ["src"]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "D", "PL", "NPY", "RUF", "UP", "S", "A"]
+ignore = [
+    "D100",   # Missing docstring in public module
+    "D105",   # Missing docstring in magic method
+    "D200",
+    "D400",
+    "S101",   # Use of `assert` detected
+]
+
+[tool.ruff.lint.per-file-ignores]
+"test*.py" = ["D", "PLR2004", "PLR0913", "PLC2701"]
+"conftest.py" = ["D", "PLR2004", "PLR0913"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["climate_ref_scm"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "test_cases: marks tests that run diagnostic test cases with ESGF data",
+]
+filterwarnings = [
+    "ignore:cannot collect test class 'TestCase':pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class 'TestDataSpecification':pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class 'TestCaseRunner':pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class 'TestCaseNotFoundError':pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class 'TestCasePaths':pytest.PytestCollectionWarning",
+]
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = ["cftime"]
+ignore_missing_imports = true
+
+[tool.uv]
+# intake-esgf 2026.9 defaults searches to CMIP7, which CMIP6Request in climate-ref-core 0.19 does not override.
+constraint-dependencies = ["intake-esgf<2026.9"]
