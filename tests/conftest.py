@@ -31,6 +31,7 @@ CONTROL_YEARS = (1, 300)
 BRANCH_YEAR = 101
 HISTORICAL_YEARS = (1850, 1879)
 SSP_YEARS = (1880, 1899)
+VARIABLE_IDS = ("tas", "rsdt", "rsut", "rlut")
 
 
 def control_value(control_year: np.ndarray) -> np.ndarray:
@@ -41,7 +42,9 @@ def forcing(year: np.ndarray) -> np.ndarray:
     return 0.05 * (year - HISTORICAL_YEARS[0])
 
 
-def _write_tas(path: Path, years: tuple[int, int], values: Callable[[np.ndarray], np.ndarray]) -> None:
+def _write_variable(
+    path: Path, variable_id: str, years: tuple[int, int], values: Callable[[np.ndarray], np.ndarray]
+) -> None:
     times = [
         cftime.datetime(year, month, 15, calendar=CALENDAR)
         for year in range(years[0], years[1] + 1)
@@ -50,7 +53,7 @@ def _write_tas(path: Path, years: tuple[int, int], values: Callable[[np.ndarray]
     year = np.array([t.year for t in times], dtype=float)
     data = values(year)[:, None, None] + CELL_OFFSET[None, :, :]
     ds = xr.Dataset(
-        {"tas": (("time", "lat", "lon"), data, {"units": "K"})},
+        {variable_id: (("time", "lat", "lon"), data)},
         coords={"time": times, "lat": LAT, "lon": LON},
     )
     ds["time"].encoding.update(units=TIME_UNITS, calendar=CALENDAR)
@@ -92,13 +95,18 @@ def _row(
     }
 
 
-def _tas_row(
-    path: Path, experiment_id: str, years: tuple[int, int], parent: str | None, branch: float | None
+def _variable_row(  # noqa: PLR0917
+    path: Path,
+    variable_id: str,
+    experiment_id: str,
+    years: tuple[int, int],
+    parent: str | None,
+    branch: float | None,
 ):
     return _row(
         path,
         experiment_id,
-        "tas",
+        variable_id,
         "Amon",
         start_time=cftime.datetime(years[0], 1, 15, calendar=CALENDAR),
         end_time=cftime.datetime(years[1], 12, 15, calendar=CALENDAR),
@@ -112,26 +120,34 @@ def _tas_row(
 
 @pytest.fixture
 def synthetic_catalog(tmp_path: Path) -> pd.DataFrame:
-    """Catalog of piControl, historical and ssp245 tas plus the fixed fields."""
+    """
+    Catalog of piControl, historical and ssp245 for each variable, plus the fixed fields.
+
+    Every variable carries the same values, so the derived net flux is predictable.
+    """
     offset = BRANCH_YEAR - HISTORICAL_YEARS[0]
 
     def child(year: np.ndarray) -> np.ndarray:
         return control_value(year + offset) + forcing(year)
 
-    _write_tas(tmp_path / "piControl.nc", CONTROL_YEARS, control_value)
-    _write_tas(tmp_path / "historical.nc", HISTORICAL_YEARS, child)
-    _write_tas(tmp_path / "ssp245.nc", SSP_YEARS, child)
     _write_fx(tmp_path / "areacella.nc", "areacella", AREA)
     _write_fx(tmp_path / "sftlf.nc", "sftlf", SFTLF)
 
     branch_days = cftime.date2num(
         cftime.datetime(BRANCH_YEAR, 1, 1, calendar=CALENDAR), TIME_UNITS, calendar=CALENDAR
     )
+    experiments = (
+        ("piControl", CONTROL_YEARS, control_value, "piControl-spinup", 0.0),
+        ("historical", HISTORICAL_YEARS, child, "piControl", branch_days),
+        ("ssp245", SSP_YEARS, child, "historical", 0.0),
+    )
     rows = [
-        _tas_row(tmp_path / "piControl.nc", "piControl", CONTROL_YEARS, "piControl-spinup", 0.0),
-        _tas_row(tmp_path / "historical.nc", "historical", HISTORICAL_YEARS, "piControl", branch_days),
-        _tas_row(tmp_path / "ssp245.nc", "ssp245", SSP_YEARS, "historical", 0.0),
         _row(tmp_path / "areacella.nc", "piControl", "areacella", "fx"),
         _row(tmp_path / "sftlf.nc", "piControl", "sftlf", "fx"),
     ]
+    for variable_id in VARIABLE_IDS:
+        for experiment_id, years, values, parent, branch in experiments:
+            path = tmp_path / f"{variable_id}_{experiment_id}.nc"
+            _write_variable(path, variable_id, years, values)
+            rows.append(_variable_row(path, variable_id, experiment_id, years, parent, branch))
     return pd.DataFrame(rows)

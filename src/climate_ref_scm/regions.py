@@ -55,7 +55,12 @@ def region_weights(
 def _open(paths: list[Path]) -> xr.Dataset:
     time_coder = xr.coders.CFDatetimeCoder(use_cftime=True)
     return xr.open_mfdataset(
-        paths, combine="by_coords", decode_times=time_coder, data_vars="minimal", coords="minimal"
+        paths,
+        combine="by_coords",
+        decode_times=time_coder,
+        data_vars="minimal",
+        coords="minimal",
+        compat="override",
     )
 
 
