@@ -1,0 +1,4524 @@
+_metadata:
+  hash: 7a339bdef2ed0d3abba543cf0c5d3fe2680292e4
+cmip7:
+  slug_column: instance_id
+  selector:
+    experiment_id: historical
+    grid_label: g115
+    source_id: ACCESS-ESM1-6
+    variant_label: r1i1p1f1
+  datasets:
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: areacella_ti-u-hxy-u
+    branding_suffix: ti-u-hxy-u
+    calendar: null
+    end_time: null
+    experiment_id: historical
+    external_variables: null
+    filename: areacella_ti-u-hxy-u_fx_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1.nc
+    finalised: true
+    frequency: fx
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.fx.areacella.ti-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Grid-Cell Area for Atmospheric Grid Variables
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos land
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: cell_area
+    start_time: null
+    time_range: null
+    time_units: null
+    tracking_id: hdl:21.14107/23b7530f-1cdc-46dd-9c7e-1dffcc62a012
+    units: m2
+    variable_id: areacella
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: sftlf_ti-u-hxy-u
+    branding_suffix: ti-u-hxy-u
+    calendar: null
+    end_time: null
+    experiment_id: historical
+    external_variables: areacella
+    filename: sftlf_ti-u-hxy-u_fx_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1.nc
+    finalised: true
+    frequency: fx
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.fx.sftlf.ti-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Percentage of the Grid Cell Occupied by Land (Including Lakes)
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: land_area_fraction
+    start_time: null
+    time_range: null
+    time_units: null
+    tracking_id: hdl:21.14107/c60bba00-6fef-4cc3-84f2-ba7e88032a03
+    units: '%'
+    variable_id: sftlf
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1859-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_185001-185912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1850-01-16 12:00:00'
+    time_range: 1850-01-16 12:00:00-1859-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/3ebe4c80-3000-4bdf-b971-ea26499dbe6f
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1869-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_186001-186912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1860-01-16 12:00:00'
+    time_range: 1860-01-16 12:00:00-1869-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/a4bb2f0a-affb-481c-bf8a-86f5ad3a43d4
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1879-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_187001-187912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1870-01-16 12:00:00'
+    time_range: 1870-01-16 12:00:00-1879-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/e7736b3f-a2bd-4870-b313-9493f171db86
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1889-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_188001-188912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1880-01-16 12:00:00'
+    time_range: 1880-01-16 12:00:00-1889-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2ca2f0aa-375f-48e3-a443-f61920c95ba9
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1899-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_189001-189912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1890-01-16 12:00:00'
+    time_range: 1890-01-16 12:00:00-1899-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/280520c0-4732-4c66-9178-09ffcb329629
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1909-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_190001-190912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1900-01-16 12:00:00'
+    time_range: 1900-01-16 12:00:00-1909-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/e8c4feec-9dae-4c59-b207-0be2a4caf372
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1919-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_191001-191912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1910-01-16 12:00:00'
+    time_range: 1910-01-16 12:00:00-1919-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/19c98f60-0d22-43bf-9138-6a464b17cfcb
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1929-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_192001-192912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1920-01-16 12:00:00'
+    time_range: 1920-01-16 12:00:00-1929-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/990a0dbc-3838-4b6b-9960-c48c3f4428bf
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1939-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_193001-193912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1930-01-16 12:00:00'
+    time_range: 1930-01-16 12:00:00-1939-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/83b0bd8e-c901-4635-a942-354f63792cbc
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1949-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_194001-194912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1940-01-16 12:00:00'
+    time_range: 1940-01-16 12:00:00-1949-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/a87f2cfd-8adf-4010-82b3-e70bcd8d46be
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1959-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_195001-195912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1950-01-16 12:00:00'
+    time_range: 1950-01-16 12:00:00-1959-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/87f43f51-50f7-40d5-a534-8302a6477924
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1969-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_196001-196912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1960-01-16 12:00:00'
+    time_range: 1960-01-16 12:00:00-1969-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/6b5ce7da-6c28-47c3-92c3-69523c89c384
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1979-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_197001-197912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1970-01-16 12:00:00'
+    time_range: 1970-01-16 12:00:00-1979-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/3f589617-c893-4b78-afd0-a1845e057e61
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1989-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_198001-198912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1980-01-16 12:00:00'
+    time_range: 1980-01-16 12:00:00-1989-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/8595f92e-bae4-4d09-b0e2-fd860855b414
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1999-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_199001-199912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '1990-01-16 12:00:00'
+    time_range: 1990-01-16 12:00:00-1999-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/5c2f5eee-ff76-4aed-9cc4-e676954d4d05
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2009-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_200001-200912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '2000-01-16 12:00:00'
+    time_range: 2000-01-16 12:00:00-2009-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/633ebccc-2240-45f4-b927-4d067b2d7fd5
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2019-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_201001-201912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '2010-01-16 12:00:00'
+    time_range: 2010-01-16 12:00:00-2019-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/b8d04e82-44ac-484f-9d24-7cbdec6d2755
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2022-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_202001-202212.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '2020-01-16 12:00:00'
+    time_range: 2020-01-16 12:00:00-2022-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/8a2234fd-c3e7-488a-b374-e8e1057a13c7
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1859-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_185001-185912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1850-01-16 12:00:00'
+    time_range: 1850-01-16 12:00:00-1859-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/cf628c71-02a2-4fd9-8c7d-d031f78bef61
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1869-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_186001-186912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1860-01-16 12:00:00'
+    time_range: 1860-01-16 12:00:00-1869-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/f01f2967-c940-4511-bf9e-b2dc2b87c0cc
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1879-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_187001-187912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1870-01-16 12:00:00'
+    time_range: 1870-01-16 12:00:00-1879-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/ba824fbf-f7f6-47a3-8d3e-5194c3de8947
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1889-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_188001-188912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1880-01-16 12:00:00'
+    time_range: 1880-01-16 12:00:00-1889-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/ed26bde0-7fe1-480b-a77c-d55b3f78f861
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1899-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_189001-189912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1890-01-16 12:00:00'
+    time_range: 1890-01-16 12:00:00-1899-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/aa54d737-e903-4e99-b5d7-241f4c546adc
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1909-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_190001-190912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1900-01-16 12:00:00'
+    time_range: 1900-01-16 12:00:00-1909-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/fbed8a4e-efcb-474f-9e1f-11b30832bd58
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1919-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_191001-191912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1910-01-16 12:00:00'
+    time_range: 1910-01-16 12:00:00-1919-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/3da41ec0-4b44-43e0-8171-b8f7441901c1
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1929-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_192001-192912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1920-01-16 12:00:00'
+    time_range: 1920-01-16 12:00:00-1929-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/8e11c884-2d6e-4e63-8726-c27d0edb97c0
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1939-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_193001-193912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1930-01-16 12:00:00'
+    time_range: 1930-01-16 12:00:00-1939-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2b8fa718-90ee-4156-8e38-e95296ef0507
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1949-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_194001-194912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1940-01-16 12:00:00'
+    time_range: 1940-01-16 12:00:00-1949-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/6c68d25f-9571-40e7-a9e0-faa612223065
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1959-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_195001-195912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1950-01-16 12:00:00'
+    time_range: 1950-01-16 12:00:00-1959-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/8a98aa1a-a4fd-407b-9067-8c3bcf04f796
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1969-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_196001-196912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1960-01-16 12:00:00'
+    time_range: 1960-01-16 12:00:00-1969-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/bad67207-92ce-4f47-8838-c607ea0b2fe8
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1979-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_197001-197912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1970-01-16 12:00:00'
+    time_range: 1970-01-16 12:00:00-1979-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/d1472d6b-4d21-4242-8102-f89cba3aee78
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1989-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_198001-198912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1980-01-16 12:00:00'
+    time_range: 1980-01-16 12:00:00-1989-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/b8d4b1ff-9a46-4539-80e7-088fed7810c3
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1999-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_199001-199912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '1990-01-16 12:00:00'
+    time_range: 1990-01-16 12:00:00-1999-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/b9620f8d-dc2d-4463-9d35-ca08f6545f5e
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2009-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_200001-200912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '2000-01-16 12:00:00'
+    time_range: 2000-01-16 12:00:00-2009-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/3d01c48d-c848-44d2-a93b-d40a0b7faf67
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2019-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_201001-201912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '2010-01-16 12:00:00'
+    time_range: 2010-01-16 12:00:00-2019-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2b195e42-83bd-46b7-92a8-fe824fb81a7b
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2022-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_202001-202212.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '2020-01-16 12:00:00'
+    time_range: 2020-01-16 12:00:00-2022-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/62671762-d5f3-43bc-81ce-dce725c93008
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1859-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_185001-185912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1850-01-16 12:00:00'
+    time_range: 1850-01-16 12:00:00-1859-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/672f6ee8-5892-4a5c-923f-5af10c5a4615
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1869-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_186001-186912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1860-01-16 12:00:00'
+    time_range: 1860-01-16 12:00:00-1869-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/822f47f1-079d-41a3-9df7-db872b286b65
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1879-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_187001-187912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1870-01-16 12:00:00'
+    time_range: 1870-01-16 12:00:00-1879-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/1c9c35f2-ed23-4bc9-bb03-08bfbff6c62d
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1889-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_188001-188912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1880-01-16 12:00:00'
+    time_range: 1880-01-16 12:00:00-1889-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/b9348e2f-0c27-4df2-9d22-5969297a1c5c
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1899-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_189001-189912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1890-01-16 12:00:00'
+    time_range: 1890-01-16 12:00:00-1899-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/6b3bc4a9-56b5-4dc4-8c41-653ffa39a43c
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1909-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_190001-190912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1900-01-16 12:00:00'
+    time_range: 1900-01-16 12:00:00-1909-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/d8504677-3805-492a-b41f-d4b52bb355cd
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1919-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_191001-191912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1910-01-16 12:00:00'
+    time_range: 1910-01-16 12:00:00-1919-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/171e9635-1891-4920-8367-985fdc75e31f
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1929-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_192001-192912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1920-01-16 12:00:00'
+    time_range: 1920-01-16 12:00:00-1929-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/fe689e2e-4535-4682-a188-d23b91da318c
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1939-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_193001-193912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1930-01-16 12:00:00'
+    time_range: 1930-01-16 12:00:00-1939-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/e713b9cf-5376-4061-ad29-22ce59c24c2d
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1949-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_194001-194912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1940-01-16 12:00:00'
+    time_range: 1940-01-16 12:00:00-1949-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/6259a9fc-318a-4e1c-a895-67e0275fc695
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1959-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_195001-195912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1950-01-16 12:00:00'
+    time_range: 1950-01-16 12:00:00-1959-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2f9c2f0b-0c4d-41a9-a7c1-abe07b8d99ec
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1969-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_196001-196912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1960-01-16 12:00:00'
+    time_range: 1960-01-16 12:00:00-1969-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/da3f6f70-bbb8-48a5-9594-8a3f35b71736
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1979-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_197001-197912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1970-01-16 12:00:00'
+    time_range: 1970-01-16 12:00:00-1979-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/d2731e47-dad5-409c-ba8c-f1cab87ddf5d
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1989-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_198001-198912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1980-01-16 12:00:00'
+    time_range: 1980-01-16 12:00:00-1989-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/35d3e739-5409-45f3-aaf4-caebe4de3079
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1999-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_199001-199912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '1990-01-16 12:00:00'
+    time_range: 1990-01-16 12:00:00-1999-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/402351c6-5904-47ae-8ddf-1c54074dc1f9
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2009-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_200001-200912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '2000-01-16 12:00:00'
+    time_range: 2000-01-16 12:00:00-2009-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/5e2ae03e-d838-47ed-a683-2e5c268bf321
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2019-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_201001-201912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '2010-01-16 12:00:00'
+    time_range: 2010-01-16 12:00:00-2019-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/c2711b1d-bad9-4b12-a3f8-9a63d16c7820
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2022-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_202001-202212.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '2020-01-16 12:00:00'
+    time_range: 2020-01-16 12:00:00-2022-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/9d755c53-dda5-42fe-84db-b50d1e39041e
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0189-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_018001-018912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0180-01-16 12:00:00'
+    time_range: 0180-01-16 12:00:00-0189-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/e9988fc8-f67d-4dc8-b5ff-a770850e9679
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0199-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_019001-019912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0190-01-16 12:00:00'
+    time_range: 0190-01-16 12:00:00-0199-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/f9e031ad-c7de-42d7-9654-7ae58c8c719c
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0209-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_020001-020912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0200-01-16 12:00:00'
+    time_range: 0200-01-16 12:00:00-0209-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/e267c109-8684-4857-baa2-62738b55085b
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0219-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_021001-021912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0210-01-16 12:00:00'
+    time_range: 0210-01-16 12:00:00-0219-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2ec37106-0fab-4150-8d00-510cb9c5bbf6
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0229-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_022001-022912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0220-01-16 12:00:00'
+    time_range: 0220-01-16 12:00:00-0229-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/8eaac2f1-185a-4e88-935c-1adc900935b7
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0239-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_023001-023912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0230-01-16 12:00:00'
+    time_range: 0230-01-16 12:00:00-0239-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/a7126046-f02f-460c-888d-9ed7a3f22b22
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0249-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_024001-024912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0240-01-16 12:00:00'
+    time_range: 0240-01-16 12:00:00-0249-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/890425b1-f722-4bd3-b65d-cfc77d71b51f
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0259-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_025001-025912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0250-01-16 12:00:00'
+    time_range: 0250-01-16 12:00:00-0259-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/9a384e10-8bc5-412e-8fc0-849e704a812c
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0269-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_026001-026912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0260-01-16 12:00:00'
+    time_range: 0260-01-16 12:00:00-0269-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/d90ab062-9148-4355-b278-88ed5a7086e3
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0279-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_027001-027912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0270-01-16 12:00:00'
+    time_range: 0270-01-16 12:00:00-0279-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/fb2bbb9f-aa1e-447f-9c98-66778880cd3a
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0289-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_028001-028912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0280-01-16 12:00:00'
+    time_range: 0280-01-16 12:00:00-0289-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4f9b10a7-3a8c-410d-b7d6-436c098871a9
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0299-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_029001-029912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0290-01-16 12:00:00'
+    time_range: 0290-01-16 12:00:00-0299-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/1394505b-d535-46ab-9828-6ac3311245de
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0309-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_030001-030912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0300-01-16 12:00:00'
+    time_range: 0300-01-16 12:00:00-0309-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/b53ef4e4-d9f8-4783-92dc-b6054840de5b
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0319-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_031001-031912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0310-01-16 12:00:00'
+    time_range: 0310-01-16 12:00:00-0319-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/23d3e0a7-6f3a-471c-82bc-18ac9f9ab067
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0329-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_032001-032912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0320-01-16 12:00:00'
+    time_range: 0320-01-16 12:00:00-0329-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/75b2ddda-29a5-444b-a7bf-e2415afc5300
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0339-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_033001-033912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0330-01-16 12:00:00'
+    time_range: 0330-01-16 12:00:00-0339-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/dc091dac-f62c-45aa-a1cf-3d58ddf3bc46
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0349-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_034001-034912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0340-01-16 12:00:00'
+    time_range: 0340-01-16 12:00:00-0349-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/ea8cb294-2a84-4f06-adcb-5891116736e0
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0359-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_035001-035912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0350-01-16 12:00:00'
+    time_range: 0350-01-16 12:00:00-0359-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/81f58411-2677-4e42-8369-ecc1edab47e7
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0369-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_036001-036912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0360-01-16 12:00:00'
+    time_range: 0360-01-16 12:00:00-0369-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/95e4ac0b-f994-4cbf-a603-4aaed43190f0
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0379-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_037001-037912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0370-01-16 12:00:00'
+    time_range: 0370-01-16 12:00:00-0379-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/c374facf-a69a-4aa7-8ba9-99c7c6cbeb06
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0389-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_038001-038912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0380-01-16 12:00:00'
+    time_range: 0380-01-16 12:00:00-0389-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/8b9fc5bd-de54-42c7-89e5-db209122b6c9
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rlut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0399-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rlut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_039001-039912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rlut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Longwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_longwave_flux
+    start_time: '0390-01-16 12:00:00'
+    time_range: 0390-01-16 12:00:00-0399-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0f5bb3cd-3236-4107-aecb-94ff9e75b157
+    units: W m-2
+    variable_id: rlut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0189-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_018001-018912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0180-01-16 12:00:00'
+    time_range: 0180-01-16 12:00:00-0189-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/130c6669-d3b3-499d-85f6-2b2d5d8de298
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0199-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_019001-019912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0190-01-16 12:00:00'
+    time_range: 0190-01-16 12:00:00-0199-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/7e6647e9-8944-41f7-9a2f-d3000fe6758c
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0209-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_020001-020912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0200-01-16 12:00:00'
+    time_range: 0200-01-16 12:00:00-0209-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2fbc2cba-04d7-4ba4-bcd3-bc9c374f412e
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0219-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_021001-021912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0210-01-16 12:00:00'
+    time_range: 0210-01-16 12:00:00-0219-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/c795dff4-4af2-4e49-a67f-283ae8c9ee94
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0229-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_022001-022912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0220-01-16 12:00:00'
+    time_range: 0220-01-16 12:00:00-0229-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/9884dfaf-d8cd-41ae-b112-b242d795d7cf
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0239-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_023001-023912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0230-01-16 12:00:00'
+    time_range: 0230-01-16 12:00:00-0239-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/08c954aa-69e4-4a12-bf16-ac5779d82e78
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0249-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_024001-024912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0240-01-16 12:00:00'
+    time_range: 0240-01-16 12:00:00-0249-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4a34ad68-5d27-4112-8bb3-6a12f00186a8
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0259-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_025001-025912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0250-01-16 12:00:00'
+    time_range: 0250-01-16 12:00:00-0259-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/576d691c-2027-4154-8977-52edf8b2949e
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0269-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_026001-026912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0260-01-16 12:00:00'
+    time_range: 0260-01-16 12:00:00-0269-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4a343d84-32dc-427d-9698-44bcf1aa5450
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0279-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_027001-027912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0270-01-16 12:00:00'
+    time_range: 0270-01-16 12:00:00-0279-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/6c460fb4-35b9-4929-8ac7-b1fb14ea2345
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0289-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_028001-028912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0280-01-16 12:00:00'
+    time_range: 0280-01-16 12:00:00-0289-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2a58986b-1974-47a5-8b18-112995db860a
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0299-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_029001-029912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0290-01-16 12:00:00'
+    time_range: 0290-01-16 12:00:00-0299-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/cf97c390-aa87-4350-9dfb-b7fe4e4c3888
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0309-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_030001-030912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0300-01-16 12:00:00'
+    time_range: 0300-01-16 12:00:00-0309-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/c0738e38-2c10-480b-adc8-8c164d9fa104
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0319-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_031001-031912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0310-01-16 12:00:00'
+    time_range: 0310-01-16 12:00:00-0319-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/84c4d526-2ded-4715-a4d4-99c24a1a8609
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0329-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_032001-032912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0320-01-16 12:00:00'
+    time_range: 0320-01-16 12:00:00-0329-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/46517139-541c-4f2f-a01f-72f046ba10cc
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0339-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_033001-033912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0330-01-16 12:00:00'
+    time_range: 0330-01-16 12:00:00-0339-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/c4368816-30c8-49b2-984f-831d89ae4b76
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0349-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_034001-034912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0340-01-16 12:00:00'
+    time_range: 0340-01-16 12:00:00-0349-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/09ccdc13-68b5-451a-833a-918e345817b2
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0359-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_035001-035912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0350-01-16 12:00:00'
+    time_range: 0350-01-16 12:00:00-0359-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/e8ee5c2a-c572-4945-900e-27ef33e9fd23
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0369-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_036001-036912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0360-01-16 12:00:00'
+    time_range: 0360-01-16 12:00:00-0369-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/46b5cbaf-b245-401b-b640-b93be4a417a4
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0379-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_037001-037912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0370-01-16 12:00:00'
+    time_range: 0370-01-16 12:00:00-0379-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/a2479fd4-d490-447b-86ca-0cd5a4d440a4
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0389-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_038001-038912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0380-01-16 12:00:00'
+    time_range: 0380-01-16 12:00:00-0389-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/72474249-392c-4845-9389-230524b66d53
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsdt_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0399-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsdt_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_039001-039912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsdt.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Incident Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_incoming_shortwave_flux
+    start_time: '0390-01-16 12:00:00'
+    time_range: 0390-01-16 12:00:00-0399-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/fe1f0643-7e61-4c6a-9b29-10b3812d22d3
+    units: W m-2
+    variable_id: rsdt
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0189-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_018001-018912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0180-01-16 12:00:00'
+    time_range: 0180-01-16 12:00:00-0189-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/6274bdaf-c395-430a-ab0c-6990b2769ed3
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0199-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_019001-019912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0190-01-16 12:00:00'
+    time_range: 0190-01-16 12:00:00-0199-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/8f1c928b-fe9c-4886-b137-bae00494c764
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0209-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_020001-020912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0200-01-16 12:00:00'
+    time_range: 0200-01-16 12:00:00-0209-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/e70207fd-a731-4ded-a768-34c6810652e9
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0219-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_021001-021912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0210-01-16 12:00:00'
+    time_range: 0210-01-16 12:00:00-0219-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2630e0df-1fbb-4000-a485-5748d1f3f5bf
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0229-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_022001-022912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0220-01-16 12:00:00'
+    time_range: 0220-01-16 12:00:00-0229-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/94c2d873-747c-4537-9f92-89869a59b236
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0239-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_023001-023912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0230-01-16 12:00:00'
+    time_range: 0230-01-16 12:00:00-0239-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/83f9d3b9-2b16-4662-a1d6-ea9dee2005e0
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0249-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_024001-024912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0240-01-16 12:00:00'
+    time_range: 0240-01-16 12:00:00-0249-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/dd205514-824b-479c-88c4-ffa40023196c
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0259-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_025001-025912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0250-01-16 12:00:00'
+    time_range: 0250-01-16 12:00:00-0259-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4ddb9e1f-a25f-4a76-8293-9e6bb236ffb9
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0269-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_026001-026912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0260-01-16 12:00:00'
+    time_range: 0260-01-16 12:00:00-0269-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/f752d29c-d1c8-472c-9ee0-458500d599e7
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0279-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_027001-027912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0270-01-16 12:00:00'
+    time_range: 0270-01-16 12:00:00-0279-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/830885e5-99b0-48b1-b31f-e2f25d879acf
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0289-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_028001-028912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0280-01-16 12:00:00'
+    time_range: 0280-01-16 12:00:00-0289-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/1ff64e20-cd4b-45e8-babd-ba0063c06be4
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0299-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_029001-029912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0290-01-16 12:00:00'
+    time_range: 0290-01-16 12:00:00-0299-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/6d6c17ce-7b63-4fa1-94d6-8cc6dc022022
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0309-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_030001-030912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0300-01-16 12:00:00'
+    time_range: 0300-01-16 12:00:00-0309-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/3cab9860-4632-4e2c-bed1-d6928db34716
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0319-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_031001-031912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0310-01-16 12:00:00'
+    time_range: 0310-01-16 12:00:00-0319-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/d0a456b9-d7d4-42dc-bf04-06f3337f6949
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0329-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_032001-032912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0320-01-16 12:00:00'
+    time_range: 0320-01-16 12:00:00-0329-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0cf74b36-44ee-42ae-be2c-153e0d0c81c3
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0339-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_033001-033912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0330-01-16 12:00:00'
+    time_range: 0330-01-16 12:00:00-0339-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/20df7020-8d60-4686-b8f0-bcdc35bce3a2
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0349-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_034001-034912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0340-01-16 12:00:00'
+    time_range: 0340-01-16 12:00:00-0349-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/83e15144-c034-42f2-b11b-735f63bf6171
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0359-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_035001-035912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0350-01-16 12:00:00'
+    time_range: 0350-01-16 12:00:00-0359-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/7872a223-85f8-4f62-9259-e36c5916b804
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0369-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_036001-036912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0360-01-16 12:00:00'
+    time_range: 0360-01-16 12:00:00-0369-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4dc33072-ed0d-446f-8a1b-6e7f33951ac5
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0379-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_037001-037912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0370-01-16 12:00:00'
+    time_range: 0370-01-16 12:00:00-0379-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/7ccfe98f-c9dd-4514-a055-4f97bd8e36f8
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0389-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_038001-038912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0380-01-16 12:00:00'
+    time_range: 0380-01-16 12:00:00-0389-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0d152948-063b-4987-9f65-9bf4df037a66
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: rsut_tavg-u-hxy-u
+    branding_suffix: tavg-u-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0399-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: rsut_tavg-u-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_039001-039912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.rsut.tavg-u-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: TOA Outgoing Shortwave Radiation
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: toa_outgoing_shortwave_flux
+    start_time: '0390-01-16 12:00:00'
+    time_range: 0390-01-16 12:00:00-0399-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0c4b6dd7-5364-49b6-8fd0-8f5d2b833dc5
+    units: W m-2
+    variable_id: rsut
+    variant_label: r1i1p1f1
+    version: v20261002

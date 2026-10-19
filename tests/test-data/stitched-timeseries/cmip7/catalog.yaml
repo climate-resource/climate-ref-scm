@@ -1,0 +1,1564 @@
+_metadata:
+  hash: 1c77feeb39e9b78a9c4ea9e01cdc7b8d68eb872d
+cmip7:
+  slug_column: instance_id
+  selector:
+    experiment_id: historical
+    grid_label: g115
+    source_id: ACCESS-ESM1-6
+    variant_label: r1i1p1f1
+  datasets:
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: areacella_ti-u-hxy-u
+    branding_suffix: ti-u-hxy-u
+    calendar: null
+    end_time: null
+    experiment_id: historical
+    external_variables: null
+    filename: areacella_ti-u-hxy-u_fx_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1.nc
+    finalised: true
+    frequency: fx
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.fx.areacella.ti-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Grid-Cell Area for Atmospheric Grid Variables
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos land
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: cell_area
+    start_time: null
+    time_range: null
+    time_units: null
+    tracking_id: hdl:21.14107/23b7530f-1cdc-46dd-9c7e-1dffcc62a012
+    units: m2
+    variable_id: areacella
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: sftlf_ti-u-hxy-u
+    branding_suffix: ti-u-hxy-u
+    calendar: null
+    end_time: null
+    experiment_id: historical
+    external_variables: areacella
+    filename: sftlf_ti-u-hxy-u_fx_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1.nc
+    finalised: true
+    frequency: fx
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.fx.sftlf.ti-u-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Percentage of the Grid Cell Occupied by Land (Including Lakes)
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: land_area_fraction
+    start_time: null
+    time_range: null
+    time_units: null
+    tracking_id: hdl:21.14107/c60bba00-6fef-4cc3-84f2-ba7e88032a03
+    units: '%'
+    variable_id: sftlf
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1859-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_185001-185912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1850-01-16 12:00:00'
+    time_range: 1850-01-16 12:00:00-1859-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/36681c1e-8950-41db-80ff-a6be06ecb511
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1869-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_186001-186912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1860-01-16 12:00:00'
+    time_range: 1860-01-16 12:00:00-1869-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/f8903d43-e4a6-4b23-afb6-a8d33d0cd6e2
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1879-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_187001-187912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1870-01-16 12:00:00'
+    time_range: 1870-01-16 12:00:00-1879-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/7f307378-7144-4ebc-b7c3-196607225fc0
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1889-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_188001-188912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1880-01-16 12:00:00'
+    time_range: 1880-01-16 12:00:00-1889-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/21da68ad-e12d-4690-897c-f9c0ea5c7b39
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1899-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_189001-189912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1890-01-16 12:00:00'
+    time_range: 1890-01-16 12:00:00-1899-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/5b9a511e-4a14-4210-aac6-9a187798e26c
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1909-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_190001-190912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1900-01-16 12:00:00'
+    time_range: 1900-01-16 12:00:00-1909-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/a8bde122-512f-4c29-a6f5-d31ce56be398
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1919-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_191001-191912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1910-01-16 12:00:00'
+    time_range: 1910-01-16 12:00:00-1919-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/e674bb83-b6f4-4be3-a4db-2866f107c1fa
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1929-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_192001-192912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1920-01-16 12:00:00'
+    time_range: 1920-01-16 12:00:00-1929-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/4deb9581-79bc-4579-9a87-639eb1b30045
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1939-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_193001-193912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1930-01-16 12:00:00'
+    time_range: 1930-01-16 12:00:00-1939-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/5a16d216-f845-4cf3-ba13-5fca69504d69
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1949-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_194001-194912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1940-01-16 12:00:00'
+    time_range: 1940-01-16 12:00:00-1949-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/58ce5312-868e-434e-bc94-130fe372e149
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1959-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_195001-195912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1950-01-16 12:00:00'
+    time_range: 1950-01-16 12:00:00-1959-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/16afa54e-9a65-456e-95d6-ea2a504c8cba
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1969-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_196001-196912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1960-01-16 12:00:00'
+    time_range: 1960-01-16 12:00:00-1969-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/4e4b7d24-6151-4d19-802c-dc5b0adcb790
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1979-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_197001-197912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1970-01-16 12:00:00'
+    time_range: 1970-01-16 12:00:00-1979-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/3d202bf9-4926-4f5c-a31f-54d4fb51bf00
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1989-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_198001-198912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1980-01-16 12:00:00'
+    time_range: 1980-01-16 12:00:00-1989-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/191163fc-4105-4b1b-9dd6-045d3f9d2e62
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '1999-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_199001-199912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '1990-01-16 12:00:00'
+    time_range: 1990-01-16 12:00:00-1999-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/aa163780-5ee4-4839-b81a-27099cfc48f6
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2009-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_200001-200912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '2000-01-16 12:00:00'
+    time_range: 2000-01-16 12:00:00-2009-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/f6f69768-7cf2-4f10-a8be-cd8c8a269041
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2019-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_201001-201912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '2010-01-16 12:00:00'
+    time_range: 2010-01-16 12:00:00-2019-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2f7965b5-a978-485e-840e-33d57cf6a1d9
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 675333.0
+    branch_time_in_parent: 73048.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '2022-12-16 12:00:00'
+    experiment_id: historical
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_historical_r1i1p1f1_202001-202212.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.historical.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261008
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '2020-01-16 12:00:00'
+    time_range: 2020-01-16 12:00:00-2022-12-16 12:00:00
+    time_units: days since 1970-01-01 00:00:00
+    tracking_id: hdl:21.14107/2f204ccf-6c04-4b51-81c0-9f7c2ec909c1
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261008
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0189-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_018001-018912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0180-01-16 12:00:00'
+    time_range: 0180-01-16 12:00:00-0189-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/b06a2acf-0605-41fc-b137-dfbbdbba7891
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0199-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_019001-019912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0190-01-16 12:00:00'
+    time_range: 0190-01-16 12:00:00-0199-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2c4b7db7-e44a-4470-a1ee-efcdf52fa00a
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0209-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_020001-020912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0200-01-16 12:00:00'
+    time_range: 0200-01-16 12:00:00-0209-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/57bf829d-9501-4b4a-a123-78e1989183a9
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0219-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_021001-021912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0210-01-16 12:00:00'
+    time_range: 0210-01-16 12:00:00-0219-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/d3c8763c-f376-4ab2-b7cd-25854688598d
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0229-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_022001-022912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0220-01-16 12:00:00'
+    time_range: 0220-01-16 12:00:00-0229-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/d6401fe3-1b02-468e-ac5d-ba5c8654d649
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0239-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_023001-023912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0230-01-16 12:00:00'
+    time_range: 0230-01-16 12:00:00-0239-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/13c3f65f-4e1c-4e10-90fd-232442df08ad
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0249-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_024001-024912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0240-01-16 12:00:00'
+    time_range: 0240-01-16 12:00:00-0249-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/5288be99-f453-4ff8-ab66-11e50bd90156
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0259-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_025001-025912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0250-01-16 12:00:00'
+    time_range: 0250-01-16 12:00:00-0259-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2da579c8-7bc8-4e40-9380-0f2e8ec7b17d
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0269-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_026001-026912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0260-01-16 12:00:00'
+    time_range: 0260-01-16 12:00:00-0269-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/a578a4d5-9339-4d2f-b7d1-0e9c40bbaff0
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0279-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_027001-027912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0270-01-16 12:00:00'
+    time_range: 0270-01-16 12:00:00-0279-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0dbce82f-58d9-4366-b6c8-c6e9026b5e2f
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0289-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_028001-028912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0280-01-16 12:00:00'
+    time_range: 0280-01-16 12:00:00-0289-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/c35ac249-4ea2-4bcb-85d2-8ccd39b7c41b
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0299-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_029001-029912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0290-01-16 12:00:00'
+    time_range: 0290-01-16 12:00:00-0299-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/ea0e5dd1-03c4-4c4a-b771-cdc44db55272
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0309-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_030001-030912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0300-01-16 12:00:00'
+    time_range: 0300-01-16 12:00:00-0309-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/4dd89b1e-0946-4292-8bfd-7d900ab3013a
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0319-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_031001-031912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0310-01-16 12:00:00'
+    time_range: 0310-01-16 12:00:00-0319-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0f5355a7-724e-42b2-8ab2-3f4d0a63512d
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0329-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_032001-032912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0320-01-16 12:00:00'
+    time_range: 0320-01-16 12:00:00-0329-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/3e5598ad-686e-4886-9a15-88ca6329dbaf
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0339-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_033001-033912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0330-01-16 12:00:00'
+    time_range: 0330-01-16 12:00:00-0339-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/ee0a0bc7-3129-4fc1-80a7-a44588f2d880
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0349-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_034001-034912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0340-01-16 12:00:00'
+    time_range: 0340-01-16 12:00:00-0349-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/7f5fa34f-ea49-4048-941a-608ee86a8a8a
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0359-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_035001-035912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0350-01-16 12:00:00'
+    time_range: 0350-01-16 12:00:00-0359-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/8e3c2e2d-b697-43d9-a8e3-1012e43808ae
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0369-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_036001-036912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0360-01-16 12:00:00'
+    time_range: 0360-01-16 12:00:00-0369-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/d87bb689-7bbf-4a7d-944b-ffa74a0cd02d
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0379-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_037001-037912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0370-01-16 12:00:00'
+    time_range: 0370-01-16 12:00:00-0379-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/0cb4ecd6-8256-469e-9d6f-f4a475779491
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0389-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_038001-038912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0380-01-16 12:00:00'
+    time_range: 0380-01-16 12:00:00-0389-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/2979105c-1ac9-4d4a-9f78-66f912ed2697
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002
+  - activity_id: CMIP
+    branch_time_in_child: 36524.0
+    branch_time_in_parent: 36524.0
+    branded_variable: tas_tavg-h2m-hxy-u
+    branding_suffix: tavg-h2m-hxy-u
+    calendar: proleptic_gregorian
+    end_time: '0399-12-16 12:00:00'
+    experiment_id: piControl
+    external_variables: areacella
+    filename: tas_tavg-h2m-hxy-u_mon_glb_g115_ACCESS-ESM1-6_piControl_r1i1p1f1_039001-039912.nc
+    finalised: true
+    frequency: mon
+    grid_label: g115
+    instance_id: CMIP7.CMIP.ACCESS-Consortium.ACCESS-ESM1-6.piControl.r1i1p1f1.glb.mon.tas.tavg-h2m-hxy-u.g115.v20261002
+    institution_id: ACCESS-Consortium
+    license_id: CC-BY-4.0
+    long_name: Near-Surface Air Temperature
+    mip_era: CMIP7
+    nominal_resolution: 250 km
+    parent_activity_id: CMIP
+    parent_experiment_id: piControl-spinup
+    parent_mip_era: CMIP7
+    parent_source_id: ACCESS-ESM1-6
+    parent_time_units: days since 0001-01-01 00:00:00
+    parent_variant_label: r1i1p1f1
+    realm: atmos
+    region: glb
+    source_id: ACCESS-ESM1-6
+    standard_name: air_temperature
+    start_time: '0390-01-16 12:00:00'
+    time_range: 0390-01-16 12:00:00-0399-12-16 12:00:00
+    time_units: days since 0001-01-01 00:00:00
+    tracking_id: hdl:21.14107/00b0ee7b-3485-4dd5-a0a2-d1807364cb05
+    units: K
+    variable_id: tas
+    variant_label: r1i1p1f1
+    version: v20261002

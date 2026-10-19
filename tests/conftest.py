@@ -1,5 +1,5 @@
 """
-Synthetic CMIP6 datasets with a drifting control run.
+Synthetic CMIP6 and CMIP7 datasets with a drifting control run.
 
 The control drifts linearly and the children add a known forcing signal on top,
 so the expected anomaly is exactly the forcing signal.
@@ -13,6 +13,10 @@ import numpy as np
 import pandas as pd
 import pytest
 import xarray as xr
+from climate_ref_core.cmip6_to_cmip7 import get_dreq_entry
+from climate_ref_core.datasets import SourceDatasetType
+
+from climate_ref_scm.diagnostics import SOURCE_TYPES
 
 SOURCE_ID = "TEST-ESM"
 VARIANT = "r1i1p1f1"
@@ -70,6 +74,8 @@ def _row(
     instance_id = (
         f"CMIP6.CMIP.TEST.{SOURCE_ID}.{experiment_id}.{VARIANT}.{table_id}.{variable_id}.gn.v20200101"
     )
+    entry = get_dreq_entry(table_id, variable_id)
+    # Rows carry the facets of both eras, so one catalog serves either source type.
     return {
         "instance_id": instance_id,
         "source_id": SOURCE_ID,
@@ -79,6 +85,10 @@ def _row(
         "table_id": table_id,
         "variable_id": variable_id,
         "grid_label": "gn",
+        "frequency": entry.frequency,
+        "region": entry.region,
+        "branding_suffix": entry.branding_suffix,
+        "branded_variable": entry.branded_variable,
         "version": "v20200101",
         "calendar": CALENDAR,
         "time_units": TIME_UNITS,
@@ -116,6 +126,11 @@ def _variable_row(  # noqa: PLR0917
         parent_time_units=TIME_UNITS if parent else None,
         branch_time_in_parent=branch,
     )
+
+
+@pytest.fixture(params=SOURCE_TYPES, ids=str)
+def source_type(request: pytest.FixtureRequest) -> SourceDatasetType:
+    return request.param
 
 
 @pytest.fixture

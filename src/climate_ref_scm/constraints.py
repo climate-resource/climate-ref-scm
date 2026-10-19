@@ -2,6 +2,8 @@
 Find the parents of a dataset in the catalog, up to its control run.
 """
 
+from typing import Self
+
 import cftime
 import pandas as pd
 from attrs import field, frozen
@@ -13,6 +15,9 @@ CONTROL_EXPERIMENTS = ("piControl", "esm-piControl")
 
 # Guards against a cycle in malformed parent metadata.
 _MAX_GENERATIONS = 10
+
+# CMIP6 pins the parent to the same table_id, which CMIP7 splits into these facets.
+_CMIP7_SHARED_FACETS = ("branding_suffix", "frequency", "region")
 
 
 @frozen
@@ -30,6 +35,16 @@ class AddAncestors:
     parent_facet_map: dict[str, str] = field(
         factory=lambda: AddParentDataset.from_defaults(SourceDatasetType.CMIP6).parent_facet_map
     )
+
+    @classmethod
+    def from_defaults(cls, source_type: SourceDatasetType) -> Self:
+        """
+        Match parents on the facets that identify the same variable for `source_type`.
+        """
+        parent_facet_map = AddParentDataset.from_defaults(source_type).parent_facet_map
+        if source_type == SourceDatasetType.CMIP7:
+            parent_facet_map = {**parent_facet_map, **{facet: facet for facet in _CMIP7_SHARED_FACETS}}
+        return cls(parent_facet_map)
 
     def apply(self, group: pd.DataFrame, data_catalog: pd.DataFrame) -> pd.DataFrame:
         """

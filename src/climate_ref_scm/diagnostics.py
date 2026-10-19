@@ -9,12 +9,13 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
+from climate_ref_core.cmip6_to_cmip7 import get_dreq_entry
 from climate_ref_core.constraints import (
     AddSupplementaryDataset,
     RequireContiguousTimerange,
     RequireFacets,
 )
-from climate_ref_core.datasets import FacetFilter, SourceDatasetType
+from climate_ref_core.datasets import DatasetCollection, FacetFilter, SourceDatasetType
 from climate_ref_core.diagnostics import (
     DataRequirement,
     Diagnostic,
@@ -28,10 +29,13 @@ from climate_ref_core.pycmec.output import CMECOutput
 from climate_ref_core.testing import TestCase, TestDataSpecification
 
 from climate_ref_scm.constraints import AddAncestors, branch_year_in_control, experiment_chain
+from climate_ref_scm.esgf import CMIP7ESGFRequest
 from climate_ref_scm.regions import annual_regional_means
 from climate_ref_scm.stitching import RUNNING_MEAN_YEARS, normalise, stitch
 
-# Experiments used to calibrate MAGICC, plus every parent they stitch onto.
+SOURCE_TYPES = (SourceDatasetType.CMIP6, SourceDatasetType.CMIP7)
+
+# Experiments used to calibrate MAGICC, plus every parent they stitch onto, from CMIP6 and CMIP7.
 EXPERIMENTS = (
     "historical",
     "hist-GHG",
@@ -51,6 +55,12 @@ EXPERIMENTS = (
     "abrupt-4xCO2",
     "abrupt-2xCO2",
     "abrupt-0p5xCO2",
+    *(
+        f"{prefix}scen7-{level}{suffix}"
+        for prefix in ("", "esm-")
+        for level in ("vl", "l", "ln", "ml", "m", "hl", "h")
+        for suffix in ("", "-ext")
+    ),
 )
 
 FIXED_FIELDS = ("areacella", "sftlf")
@@ -87,27 +97,64 @@ _RCMIP_NAMES = {
 }
 
 
+def _variable_facets(
+    source_type: SourceDatasetType, variable_ids: Sequence[str]
+) -> dict[str, tuple[str, ...]]:
+    if source_type == SourceDatasetType.CMIP7:
+        return {
+            "branded_variable": tuple(get_dreq_entry("Amon", v).branded_variable for v in variable_ids),
+            "frequency": ("mon",),
+            "region": ("glb",),
+        }
+    return {"variable_id": tuple(variable_ids), "table_id": ("Amon",)}
+
+
+def _request(
+    source_type: SourceDatasetType,
+    slug: str,
+    facets: dict[str, str],
+    time_span: tuple[str, str] | None = None,
+) -> CMIP6Request | CMIP7ESGFRequest:
+    table_id = "fx" if facets["variable_id"] in FIXED_FIELDS else "Amon"
+    if source_type == SourceDatasetType.CMIP7:
+        entry = get_dreq_entry(table_id, facets["variable_id"])
+        cmip7_facets = {k: v for k, v in facets.items() if k != "member_id"}
+        return CMIP7ESGFRequest(
+            slug,
+            facets={
+                **cmip7_facets,
+                "variant_label": facets["member_id"],
+                "variable_branding_suffix": entry.branding_suffix,
+                "frequency": entry.frequency,
+            },
+            time_span=time_span,
+        )
+    # REF 0.19.0 leaves the project to intake-esgf, whose default is now CMIP7.
+    return CMIP6Request(
+        slug,
+        facets={**facets, "project": "CMIP6", "table_id": table_id},
+        time_span=time_span,
+    )
+
+
 def _requests(  # noqa: PLR0913
     *,
+    source_type: SourceDatasetType = SourceDatasetType.CMIP6,
     name: str,
     source_id: str,
     variable_ids: Sequence[str],
     experiment_id: str,
     experiment_span: tuple[str, str] | None,
     control_span: tuple[str, str],
-) -> tuple[CMIP6Request, ...]:
+) -> tuple[CMIP6Request | CMIP7ESGFRequest, ...]:
     facets = {"source_id": source_id, "member_id": "r1i1p1f1"}
     return (
         *(
-            CMIP6Request(
-                slug=f"{name}-{variable_id}-{suffix}",
-                facets={
-                    **facets,
-                    "experiment_id": experiment,
-                    "variable_id": variable_id,
-                    "table_id": "Amon",
-                },
-                time_span=span,
+            _request(
+                source_type,
+                f"{name}-{variable_id}-{suffix}",
+                {**facets, "experiment_id": experiment, "variable_id": variable_id},
+                span,
             )
             for variable_id in variable_ids
             for suffix, experiment, span in (
@@ -116,14 +163,10 @@ def _requests(  # noqa: PLR0913
             )
         ),
         *(
-            CMIP6Request(
-                slug=f"{name}-{fixed_field}",
-                facets={
-                    **facets,
-                    "experiment_id": experiment_id,
-                    "variable_id": fixed_field,
-                    "table_id": "fx",
-                },
+            _request(
+                source_type,
+                f"{name}-{fixed_field}",
+                {**facets, "experiment_id": experiment_id, "variable_id": fixed_field},
             )
             for fixed_field in FIXED_FIELDS
         ),
@@ -274,6 +317,11 @@ def build_series(timeseries: pd.DataFrame, dimensions: dict[str, str]) -> list[S
     ]
 
 
+def _model_datasets(definition: ExecutionDefinition) -> DatasetCollection:
+    (source_type,) = definition.datasets.keys()
+    return definition.datasets[source_type]
+
+
 def _output_bundle() -> dict[str, Any]:
     bundle = CMECOutput.create_template()
     bundle["data"]["timeseries"] = {
@@ -322,34 +370,36 @@ class StitchedTimeseries(Diagnostic):
         self.slug = slug
         self.variable_ids = variable_ids
         self.test_data_spec = test_data_spec
-        self.data_requirements = (
-            DataRequirement(
-                source_type=SourceDatasetType.CMIP6,
-                filters=(
-                    FacetFilter(
-                        facets={
-                            "variable_id": variable_ids,
-                            "table_id": ("Amon",),
-                            "experiment_id": EXPERIMENTS,
-                        }
+        self.data_requirements = tuple(
+            (
+                DataRequirement(
+                    source_type=source_type,
+                    filters=(
+                        FacetFilter(
+                            facets={
+                                **_variable_facets(source_type, variable_ids),
+                                "experiment_id": EXPERIMENTS,
+                            }
+                        ),
+                    ),
+                    group_by=("source_id", "experiment_id", "variant_label", "grid_label"),
+                    constraints=(
+                        RequireContiguousTimerange(group_by=("instance_id",)),
+                        AddAncestors.from_defaults(source_type),
+                        *(
+                            AddSupplementaryDataset.from_defaults(fixed_field, source_type)
+                            for fixed_field in FIXED_FIELDS
+                        ),
+                        RequireFacets("variable_id", (*variable_ids, *FIXED_FIELDS)),
                     ),
                 ),
-                group_by=("source_id", "experiment_id", "variant_label", "grid_label"),
-                constraints=(
-                    RequireContiguousTimerange(group_by=("instance_id",)),
-                    AddAncestors(),
-                    *(
-                        AddSupplementaryDataset.from_defaults(fixed_field, SourceDatasetType.CMIP6)
-                        for fixed_field in FIXED_FIELDS
-                    ),
-                    RequireFacets("variable_id", (*variable_ids, *FIXED_FIELDS)),
-                ),
-            ),
+            )
+            for source_type in SOURCE_TYPES
         )
 
     def execute(self, definition: ExecutionDefinition) -> None:
         """Stitch, normalise and write the regional series."""
-        collection = definition.datasets[SourceDatasetType.CMIP6]
+        collection = _model_datasets(definition)
         selectors = collection.selector_dict()
         timeseries = stitched_timeseries(collection.datasets, selectors["experiment_id"], self.variable_ids)
         to_rcmip_format(timeseries, selectors).to_csv(
@@ -358,7 +408,7 @@ class StitchedTimeseries(Diagnostic):
 
     def build_execution_result(self, definition: ExecutionDefinition) -> ExecutionResult:
         """Read the written series back into REF series values."""
-        selectors = definition.datasets[SourceDatasetType.CMIP6].selector_dict()
+        selectors = _model_datasets(definition).selector_dict()
         timeseries = from_rcmip_format(pd.read_csv(definition.output_directory / OUTPUT_FILENAME))
 
         return ExecutionResult.build_from_output_bundle(
@@ -371,6 +421,7 @@ class StitchedTimeseries(Diagnostic):
 
 # ACCESS-ESM1-5 historical branches at piControl year 161,
 # and abrupt-4xCO2 at year 101, the first year of piControl.
+# ACCESS-ESM1-6 historical branches at piControl year 201.
 STITCHED_TAS = StitchedTimeseries(
     name="Stitched timeseries",
     slug="stitched-timeseries",
@@ -401,6 +452,19 @@ STITCHED_TAS = StitchedTimeseries(
                     control_span=("0101-01", "0160-12"),
                 ),
             ),
+            TestCase(
+                name="cmip7",
+                description="ACCESS-ESM1-6 CMIP7 historical tas normalised against piControl",
+                requests=_requests(
+                    source_type=SourceDatasetType.CMIP7,
+                    name="historical-cmip7",
+                    source_id="ACCESS-ESM1-6",
+                    variable_ids=("tas",),
+                    experiment_id="historical",
+                    experiment_span=None,
+                    control_span=("0181-01", "0399-12"),
+                ),
+            ),
         ),
     ),
 )
@@ -422,6 +486,19 @@ STITCHED_TOA_FLUXES = StitchedTimeseries(
                     experiment_id="historical",
                     experiment_span=None,
                     control_span=("1850-01", "2029-12"),
+                ),
+            ),
+            TestCase(
+                name="cmip7",
+                description="ACCESS-ESM1-6 CMIP7 historical TOA fluxes normalised against piControl",
+                requests=_requests(
+                    source_type=SourceDatasetType.CMIP7,
+                    name="toa-historical-cmip7",
+                    source_id="ACCESS-ESM1-6",
+                    variable_ids=TOA_FLUXES,
+                    experiment_id="historical",
+                    experiment_span=None,
+                    control_span=("0181-01", "0399-12"),
                 ),
             ),
         ),
