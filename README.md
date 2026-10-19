@@ -21,6 +21,11 @@ For each variable they:
 - subtract a 21-year running mean of the control run at the matching time after the branch,
   which also removes drift in the control run.
 
+Both diagnostics accept CMIP6 or CMIP7 data.
+CMIP7 variables are matched by their branded name (for example `tas_tavg-h2m-hxy-u`),
+and the scenarios include `scen7-*`, `esm-scen7-*` and their `-ext` extensions.
+The CMIP7 test cases download ACCESS-ESM1-6 from the ESGF STAC catalogs.
+
 Results are written to `timeseries.csv` in the layout of the RCMIP submission files,
 and stored in the REF as series with `metric` set to the variable
 and `statistic` set to `absolute` or `anomaly`.

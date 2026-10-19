@@ -22,6 +22,7 @@ classifiers = [
 dependencies = [
     "cftime>=1.6",
     "climate-ref-core>=0.19.0,<1.0.0",
+    "intake-esgf>=2026.9.28",
     "netcdf4>=1.7",
     "numpy>=2",
     "pandas>=2.2",
@@ -100,7 +101,3 @@ show_error_codes = true
 [[tool.mypy.overrides]]
 module = ["cftime"]
 ignore_missing_imports = true
-
-[tool.uv]
-# intake-esgf 2026.9 defaults searches to CMIP7, which CMIP6Request in climate-ref-core 0.19 does not override.
-constraint-dependencies = ["intake-esgf<2026.9"]
