@@ -32,6 +32,14 @@ and `statistic` set to `absolute` or `anomaly`.
 
 Cells centred on the equator count as northern hemisphere, as in netcdf-scm.
 
+Where the parent member named in a dataset's metadata is not available,
+the nearest member of the parent experiment is used instead,
+preferring the same initialisation, physics and forcing indices.
+This is a fallback rather than the true parent:
+the substitute supplies the years before the branch and the branch point in the control run,
+so every child stitched onto the same substitute shares those years.
+The `caveats` column of `timeseries.csv` names each substitution, and is empty where there is none.
+
 The control run must cover every year of the stitched series.
 Where a full 21-year window does not fit at either end of the control run,
 the running mean is extended along a straight line fitted to its nearest 21 full-window values.

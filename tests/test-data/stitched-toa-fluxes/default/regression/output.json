@@ -1,7 +1,7 @@
 {
   "data": {
     "timeseries": {
-      "description": "Annual means over the world and the four MAGICC boxes, stitched onto the parent experiments, as absolute values and as anomalies from a 21-year running mean of the control run.",
+      "description": "Annual means over the world and the four MAGICC boxes, stitched onto the parent experiments, as absolute values and as anomalies from a 21-year running mean of the control run. The caveats column names any parent member substituted because the named one is not available.",
       "dimensions": null,
       "filename": "timeseries.csv",
       "long_name": "Stitched regional annual means"

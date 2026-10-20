@@ -2,6 +2,8 @@
 Find the parents of a dataset in the catalog, up to its control run.
 """
 
+import itertools
+import re
 from typing import Self
 
 import cftime
@@ -19,6 +21,26 @@ _MAX_GENERATIONS = 10
 # CMIP6 pins the parent to the same table_id, which CMIP7 splits into these facets.
 _CMIP7_SHARED_FACETS = ("branding_suffix", "frequency", "region")
 
+_MEMBER = re.compile(r"r(\d+)(i\d+p\d+f\d+)")
+
+
+def nearest_member(wanted: str, members: list[str]) -> str:
+    """
+    Pick the member closest to `wanted`.
+
+    Members with the same i, p and f are preferred, then the nearest realisation, then the lower one.
+    """
+    w = _MEMBER.fullmatch(wanted)
+
+    def distance(member: str) -> tuple[int, int, int]:
+        m = _MEMBER.fullmatch(member)
+        if w is None or m is None:
+            return (2, 0, 0)
+        realisation = int(m.group(1))
+        return (m.group(2) != w.group(2), abs(realisation - int(w.group(1))), realisation)
+
+    return min(members, key=distance)
+
 
 @frozen
 class AddAncestors:
@@ -26,6 +48,7 @@ class AddAncestors:
     Add every ancestor of each variable in the group, up to and including its control run.
 
     An `ssp245` group gains its `historical` parent and the `piControl` behind that.
+    Where the named parent member is not available, the nearest member of the parent experiment is used.
     The group is dropped if any link in the chain is missing or ambiguous.
 
     Every intermediate experiment must pass the requirement's filters,
@@ -81,14 +104,20 @@ class AddAncestors:
         facets = child_facets.iloc[0]
         mask = pd.Series(True, index=data_catalog.index)
         for parent_facet, child_facet in self.parent_facet_map.items():
-            mask &= data_catalog[parent_facet] == facets[child_facet]
-        parent = data_catalog[mask]
-        if parent.empty:
+            if parent_facet != "variant_label":
+                mask &= data_catalog[parent_facet] == facets[child_facet]
+        candidates = data_catalog[mask]
+        if candidates.empty:
             logger.debug(
                 f"Constraint {self} not satisfied because no parent was found for {facets.to_dict()}"
             )
             return None
-        return select_latest_version(parent)
+
+        wanted = facets[self.parent_facet_map["variant_label"]]
+        member = nearest_member(wanted, sorted(candidates["variant_label"].unique()))
+        if member != wanted:
+            logger.debug(f"Parent member {wanted} is not available, so {member} is used instead")
+        return select_latest_version(candidates[candidates["variant_label"] == member])
 
 
 def experiment_chain(datasets: pd.DataFrame, experiment_id: str) -> list[pd.Series]:
@@ -117,6 +146,28 @@ def experiment_chain(datasets: pd.DataFrame, experiment_id: str) -> list[pd.Seri
             raise ValueError(f"Parent {parent_id!r} of {chain[-1]['experiment_id']!r} is not in the datasets")
         chain.append(by_experiment[parent_id])
     return chain
+
+
+def member_fallbacks(chain: list[pd.Series]) -> list[str]:
+    """
+    Describe each link in the chain whose parent is not the member the child names.
+
+    Parameters
+    ----------
+    chain
+        One row per experiment, from the target up to the control run
+
+    Returns
+    -------
+    :
+        One description per substituted parent, empty if every parent is the named member
+    """
+    return [
+        f"{parent['experiment_id']} {child['parent_variant_label']} is not available, "
+        f"so {parent['variant_label']} is used"
+        for child, parent in itertools.pairwise(chain)
+        if child["parent_variant_label"] != parent["variant_label"]
+    ]
 
 
 def branch_year_in_control(child: pd.Series, control: pd.Series) -> int:
